@@ -21,9 +21,9 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="h-screen bg-gradient-to-t from-black to-slate-800 pt-20ddx">
+    <div className="min-h-screen bg-gradient-to-t from-black to-slate-800 pt-16">
       <div className="max-w-2xl mx-auto p-4 py-8">
-        <div className="bg-base-300 rounded-xl p-6 space-y-8">
+        <div className="bg-base-300 rounded-xl p-4 space-y-6">
           <div className="text-center">
             <h1 className="text-2xl font-semibold">Profile</h1>
             <p className="mt-2">Your profile information</p>
@@ -34,7 +34,7 @@ const ProfilePage = () => {
               <img
                 src={selectedImg || authUser.profilePic || "/avatar.png"}
                 alt="Profile"
-                className="size-32 rounded-full object-cover border-4"
+                className="size-24 rounded-full object-cover border-4"
               />
               <label
                 htmlFor="avatar-upload"
@@ -83,7 +83,7 @@ const ProfilePage = () => {
             </div>
           </div>
 
-          <div className="mt-6 bg-base-300 rounded-xl p-6">
+          <div className="mt-4 bg-base-300 rounded-xl p-4">
             <h2 className="text-lg font-medium mb-4">Account Information</h2>
             <div className="space-y-3 text-sm">
               <div className="flex items-center justify-between py-2 border-b border-zinc-700">
